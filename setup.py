@@ -1,8 +1,8 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='DS_Helper',
     version='0.1',
-    py_modules=['ds_helper'],
-    install_requires=[],
+    packages=find_packages(),  # DS_Helper içindeki tüm modülleri bulur
+    install_requires=[],  # Gerekiyorsa bağımlılıkları buraya ekleyebilirsiniz
 )
