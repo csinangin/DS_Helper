@@ -1,6 +1,6 @@
 from sklearn.metrics import classification_report,confusion_matrix
 
-def svm_eval_metric(model, X_train, y_train, X_test, y_test):
+def _svm_eval_metric(model, X_train, y_train, X_test, y_test):
     y_train_pred = model.predict(X_train)
     y_pred = model.predict(X_test)
     
