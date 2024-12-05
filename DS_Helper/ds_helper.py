@@ -10,15 +10,6 @@ from sklearn.svm import SVC
 
 class svm:
     def eval_metric(model, X_train, y_train, X_test, y_test):
-        """SVM model için metrik bilgilerini verir.
-
-        Args:
-            model (_type_): _description_
-            X_train (_type_): _description_
-            y_train (_type_): _description_
-            X_test (_type_): _description_
-            y_test (_type_): _description_
-        """
         y_train_pred = model.predict(X_train)
         y_pred = model.predict(X_test)
         
@@ -31,12 +22,6 @@ class svm:
         print(classification_report(y_train, y_train_pred))
 
     def plot_svm_decision_boundary_with_errors(X, y):
-        """SVM model için sonuç grafiği çizer
-
-        Args:
-            X (_type_): _description_
-            y (_type_): _description_
-        """
         # Örnek veriyi oluşturma ve bazı noktaları yanlış sınıflandırmayı sağlama
         X, y = make_blobs(n_samples=300, centers=2, random_state=42, cluster_std=1.0)
         y[::10] = 1 - y[::10]  # Her 10. örneğin sınıfını değiştirerek yanlış sınıflandırma sağlama

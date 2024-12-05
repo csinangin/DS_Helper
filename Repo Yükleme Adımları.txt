@@ -2,7 +2,7 @@ pip install git+https://github.com/csinangin/DS_Helper.git
 
 pip uninstall DS_Helper
 
-import DS_Helper.ds_helper as dsh
+from DS_Helper.ds_helper import svm
 
 ------------------------------------------------------------------------------------------------
 import sys
@@ -11,5 +11,5 @@ current_dir = os.path.dirname(os.path.abspath('SVM (Support Vector Machines).ipy
 a_folder_path = os.path.abspath(os.path.join(current_dir, "../../../DS_Helper"))
 sys.path.append(a_folder_path)
 
-from ds_helper import svm
+from DS_Helper.ds_helper import svm
 ------------------------------------------------------------------------------------------------
