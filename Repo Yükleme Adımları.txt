@@ -1,0 +1,5 @@
+pip install git+https://github.com/csinangin/DS_Helper.git
+
+pip uninstall DS_Helper
+
+import DS_Helper.ds_helper as dsh
